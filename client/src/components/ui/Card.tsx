@@ -1,0 +1,42 @@
+import React from "react";
+
+interface CardProps {
+  letter: string;
+  caption: string;
+  description: string;
+  bgClass?: string;
+  captionClass?: string;
+}
+
+const Card: React.FC<CardProps> = ({
+  letter,
+  caption,
+  description,
+  bgClass = "bg-yellow2",
+  captionClass = "text-primary",
+}) => {
+  return (
+    <div
+      className={`relative flex flex-col justify-end items-center ${bgClass} p-6 rounded-xl shadow-md overflow-hidden w-full`}
+    >
+      {/* Background Letter */}
+      <span className="absolute -top-10 right-2 text-[8rem] font-extrabold opacity-15 pointer-events-none select-none">
+        {letter}
+      </span>
+
+      {/* Content */}
+      <div className="relative text-center z-10 w-full">
+        <h3
+          className={`text-xl md:text-3xl font-bold mb-2 ${captionClass}`}
+        >
+          {caption}
+        </h3>
+        <p className="text-primary text-base md:text-lg">
+          {description}
+        </p>
+      </div>
+    </div>
+  );
+};
+
+export default Card;
