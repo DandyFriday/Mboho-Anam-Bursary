@@ -11,26 +11,26 @@ const Navbar = () => {
           <img
             src={assets.logo1}
             alt="Mboho Anam Logo"
-            className="h-9 w-auto"
+            className="h-14 w-auto"
           />
-          <span className="font-bold text-primary text-lg">
+          <span className="font-bold text-[#065f46] text-[30px]">
             Mboho Anam
           </span>
         </Link>
 
         {/* Links */}
         <nav className="hidden md:flex items-center gap-6">
-          <NavLink to="/" className="hover:text-gold text-primary">
+          <NavLink to="/" className="font-bold hover:text-gold text-[#065f46]">
             Home
           </NavLink>
 
-          <NavLink to="/contact" className="hover:text-gold text-primary">
+          <NavLink to="/contact" className="font-bold hover:text-gold text-[#065f46]">
             Contact
           </NavLink>
 
           {/* Bursary */}
           <div className="relative group">
-            <button className="text-primary hover:text-gold">
+            <button className="font-bold text-[#065f46] hover:text-gold">
               Bursary
             </button>
             <div className="absolute top-full left-0 mt-2 hidden group-hover:block bg-white shadow rounded w-56">
@@ -45,13 +45,13 @@ const Navbar = () => {
         <div className="flex items-center gap-3">
           <Link
             to="/login"
-            className="px-4 py-1.5 border border-primary text-primary rounded hover:bg-primary hover:text-white transition"
+            className="font-bold px-4 py-1.5 border border-[#f3f4f6] text-[#065f46] rounded hover:bg-[#f3f4f6] hover:text-gold transition"
           >
             Login
           </Link>
           <Link
             to="/register"
-            className="px-4 py-1.5 bg-primary text-white rounded hover:bg-opacity-90 transition"
+            className="font-bold px-4 py-1.5 border border-[#f3f4f6] text-[#065f46] rounded hover:bg-[#f3f4f6] hover:text-gold  transition"
           >
             Register
           </Link>
