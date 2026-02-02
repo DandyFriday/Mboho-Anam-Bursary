@@ -14,7 +14,7 @@ const slides = [
   },
   {
     image: assets.Nat_Pre,
-    overlay: "bg-goldSoft/70",
+    overlay: "bg-[#ff8832]/50",
   },
 ];
 
