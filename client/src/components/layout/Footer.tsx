@@ -15,7 +15,7 @@ const footerLinks = [
 
 
 return (
-<footer className="bg-primary text-gray-100 mt-10">
+<footer className="bg-[#065f46] text-gray-100 mt-10">
 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
 <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
 <div>
@@ -56,8 +56,8 @@ return (
 </div>
 
 
-<div className="mt-8 border-t border-primary/50 pt-6 text-sm flex flex-col md:flex-row justify-between gap-4">
-<p>© {new Date().getFullYear()} Engr. Dandy George & Co — All rights reserved.</p>
+<div className="mt-8 border-t border-orange-400 pt-6 text-sm flex flex-col md:flex-row justify-between gap-4">
+<p>© {new Date().getFullYear()} Engr. Dandy George — All rights reserved.</p>
 <div>
 <Link to="#" className="mr-4">Terms</Link>
 <Link to="#">Privacy</Link>

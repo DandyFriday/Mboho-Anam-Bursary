@@ -69,12 +69,12 @@ const Hero = () => {
             <Button
               text="Existing User? Login"
               navigateTo="/login"
-              className="bg-white text-primary"
+              className="bg-white text-primary hover:bg-[#f3f4f6]/40 hover:text-[#4b5563]"
             />
             <Button
               text="Apply Bursary"
               navigateTo="/register"
-              className="bg-gold text-dark"
+              className="bg-orange-400 text-white  hover:bg-[#f3f4f6]/40 hover:text-[#4b5563]"
             />
           </div>
         </div>

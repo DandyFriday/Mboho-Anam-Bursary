@@ -13,14 +13,14 @@ const Card: React.FC<CardProps> = ({
   caption,
   description,
   bgClass = "bg-yellow2",
-  captionClass = "text-primary",
+  captionClass = "text-white",
 }) => {
   return (
     <div
       className={`relative flex flex-col justify-end items-center ${bgClass} p-6 rounded-xl shadow-md overflow-hidden w-full`}
     >
       {/* Background Letter */}
-      <span className="absolute -top-10 right-2 text-[8rem] font-extrabold opacity-15 pointer-events-none select-none">
+      <span className="absolute -top-10 right-2 text-[8rem] font-extrabold opacity-10 pointer-events-none select-none">
         {letter}
       </span>
 
@@ -31,7 +31,7 @@ const Card: React.FC<CardProps> = ({
         >
           {caption}
         </h3>
-        <p className="text-primary text-base md:text-lg">
+        <p className="text-white text-base md:text-lg">
           {description}
         </p>
       </div>

@@ -15,7 +15,7 @@ const navigate = useNavigate()
 return (
 <section className="py-12 bg-white">
 <div className="max-w-6xl mx-auto px-4">
-<h2 className="text-2xl md:text-3xl font-bold text-center text-primary mb-8">Leadership Structure of the Mboho Anam</h2>
+<h2 className="text-2xl md:text-4xl font-bold text-center text-primary mb-12">Leadership Structure of the Mboho Anam</h2>
 
 
 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
