@@ -34,7 +34,7 @@ const Contact: React.FC = () => {
           </div>
 
           <div className="mt-4 text-right">
-            <Button text="Send Message" className="bg-orange-500 text-white" icon={<BsArrowRight />} />
+            <Button text="Send Message" className="bg-orange text-white" icon={<BsArrowRight />} />
           </div>
         </form>
       </div>
