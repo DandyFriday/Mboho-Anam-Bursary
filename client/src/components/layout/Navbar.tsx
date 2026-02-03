@@ -24,16 +24,16 @@ const Navbar = () => {
 
         {/* Center Nav */}
         <nav className="hidden md:flex flex-1 items-center justify-center gap-6">
-          <NavLink to="/" className="font-bold text-[#065f46] hover:text-gold">
+          <NavLink to="/" className="font-bold text-[#065f46] hover:text-orange/100">
             Home
           </NavLink>
 
-          <NavLink to="/contact" className="font-bold text-[#065f46] hover:text-gold">
+          <NavLink to="/contact" className="font-bold text-[#065f46] hover:text-orange/100">
             Contact
           </NavLink>
 
           <div className="relative group">
-            <button className="font-bold text-[#065f46] hover:text-gold">
+            <button className="font-bold text-[#065f46] hover:text-orange/100">
               Bursary
             </button>
             <div className="absolute top-full left-0 mt-2 hidden group-hover:block bg-white shadow rounded w-64">
@@ -43,7 +43,7 @@ const Navbar = () => {
             </div>
           </div>
 
-          <NavLink to="/news" className="font-bold text-[#065f46] hover:text-gold">
+          <NavLink to="/news" className="font-bold text-[#065f46] hover:text-orange/100">
             News
           </NavLink>
         </nav>
@@ -52,13 +52,13 @@ const Navbar = () => {
         <div className="hidden md:flex items-center gap-3">
           <Link
             to="/login"
-            className="font-bold px-4 py-1.5 border border-[#f3f4f6] text-[#065f46] rounded hover:bg-[#f3f4f6] hover:text-gold transition"
+            className="font-bold px-4 py-1.5 border border-[#f3f4f6] text-[#065f46] rounded hover:bg-[#f3f4f6] hover:text-orange/100 transition"
           >
             Login
           </Link>
           <Link
             to="/register"
-            className="font-bold px-4 py-1.5 border border-[#f3f4f6] text-[#065f46] rounded hover:bg-[#f3f4f6] hover:text-gold transition"
+            className="font-bold px-4 py-1.5 border border-[#f3f4f6] text-[#065f46] rounded hover:bg-[#f3f4f6] hover:text-orange/100 transition"
           >
             Register
           </Link>

@@ -7,10 +7,10 @@ import Card from "../components/ui/Card";
 
 const features = [
   { letter: "M", caption: "Motivation", description: "Empowering students.", bgClass: "bg-primary", captionClass: "text-white" },
-  { letter: "B", caption: "Bursary", description: "Financial support.", bgClass: "bg-orange-400", captionClass: "text-dark" },
+  { letter: "B", caption: "Bursary", description: "Financial support.", bgClass: "bg-orange", captionClass: "text-dark" },
   { letter: "O", caption: "Opportunity", description: "Creating growth.", bgClass: "bg-primary", captionClass: "text-white" },
-  { letter: "H", caption: "Hope", description: "A brighter future.", bgClass: "bg-orange-400", captionClass: "text-dark" },
-  { letter: "O", caption: "Organization", description: "Unified effort.", bgClass: "bg-primary", captionClass: "text-white" },
+  { letter: "H", caption: "Hope", description: "A brighter future.", bgClass: "bg-orange", captionClass: "text-dark" },
+  { letter: "O", caption: "Organization", description: "Unified effort.", bgClass: "bg-[#065f46]", captionClass: "text-white" },
 ];
 
 const Home = () => {

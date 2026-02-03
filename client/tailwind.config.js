@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        "orange":'#ff8832',
+        orange:"#ff8832",
         primary: "#4d0892", // Akwa Ibom purple
         gold: "#f5c400",
          primarySoft: "#ede7f6",

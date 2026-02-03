@@ -14,7 +14,7 @@ const slides = [
   },
   {
     image: assets.Nat_Pre,
-    overlay: "bg-[#ff8832]/50",
+    overlay: "bg-gold/40",
   },
 ];
 
@@ -74,7 +74,7 @@ const Hero = () => {
             <Button
               text="Apply Bursary"
               navigateTo="/register"
-              className="bg-orange-400 text-white  hover:bg-[#f3f4f6]/40 hover:text-[#4b5563]"
+              className="bg-orange/100 text-white  hover:bg-[#f3f4f6]/40 hover:text-[#4b5563]"
             />
           </div>
         </div>

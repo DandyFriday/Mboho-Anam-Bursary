@@ -17,7 +17,7 @@ const Card: React.FC<CardProps> = ({
 }) => {
   return (
     <div
-      className={`relative flex flex-col justify-end items-center ${bgClass} p-6 rounded-xl shadow-md overflow-hidden w-full`}
+      className={`relative flex flex-col justify-end items-center ${bgClass} p-8 rounded-xl shadow-md overflow-hidden w-full`}
     >
       {/* Background Letter */}
       <span className="absolute -top-10 right-2 text-[8rem] font-extrabold opacity-10 pointer-events-none select-none">

@@ -17,7 +17,7 @@ const CardsSection = () => {
 
         <div
           onClick={() => navigate("/login")}
-          className="w-72 p-6 bg-orange-400 text-white rounded-lg shadow cursor-pointer hover:scale-105 transition"
+          className="w-72 p-6 bg-orange text-white rounded-lg shadow cursor-pointer hover:scale-105 transition"
         >
           <h2 className="text-xl font-bold mb-2">Check Status</h2>
           <p>Track your application progress.</p>

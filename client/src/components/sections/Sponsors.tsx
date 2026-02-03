@@ -13,7 +13,7 @@ return (
 <img src={assets.Dr_Ikim2} alt="Sponsor" className="w-full rounded-lg shadow-md" />
 </div>
 <div>
-<h3 className="text-3xl font-bold mb-2 text-orange-400">Mboho Anam</h3>
+<h3 className="text-3xl font-bold mb-2 text-orange">Mboho Anam</h3>
 <p>Mboho Anam is the major platform and umbrella of the Anam people to advance their collective goals and well-being—especially in Education, Scholarships and Bursary programs.</p>
 </div>
 </div>
