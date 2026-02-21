@@ -6,11 +6,11 @@ import Sponsors from "../components/sections/Sponsors";
 import Card from "../components/ui/Card";
 
 const features = [
-  { letter: "M", caption: "Motivation", description: "Empowering students.", bgClass: "bg-primary", captionClass: "text-white" },
-  { letter: "B", caption: "Bursary", description: "Financial support.", bgClass: "bg-orange", captionClass: "text-dark" },
-  { letter: "O", caption: "Opportunity", description: "Creating growth.", bgClass: "bg-primary", captionClass: "text-white" },
-  { letter: "H", caption: "Hope", description: "A brighter future.", bgClass: "bg-orange", captionClass: "text-dark" },
-  { letter: "O", caption: "Organization", description: "Unified effort.", bgClass: "bg-[#065f46]", captionClass: "text-white" },
+  {  caption: "Motivation", description: "Empowering students.", bgClass: "bg-primary", captionClass: "text-white" },
+  {  caption: "Bursary", description: "Financial support.", bgClass: "bg-orange", captionClass: "text-dark" },
+  {  caption: "Opportunity", description: "Creating growth.", bgClass: "bg-primary", captionClass: "text-white" },
+  { caption: "Hope", description: "A brighter future.", bgClass: "bg-orange", captionClass: "text-dark" },
+  {  caption: "Organization", description: "Unified effort.", bgClass: "bg-[#065f46]", captionClass: "text-white" },
 ];
 
 const Home = () => {
