@@ -1,18 +1,15 @@
-
-
-
 //import React from 'react'
 import { assets } from "../../assets/assets";
 
 
-const Sponsor = () => {
+const Sponsors = () => {
 return (
-<section className="py-12 bg-gray-50">
+<section className="py-12 bg-white">
 <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
 <div>
-<img src={assets.Dr_Ikim2} alt="Sponsor" className="w-full rounded-lg shadow-md" />
+<img src={assets.m_logo11} alt="Sponsor" className="w-full rounded-lg" />
 </div>
-<div>
+<div className="ml-8">
 <h3 className="text-3xl font-bold mb-2 text-orange">Mboho Anam</h3>
 <p>Mboho Anam is the major platform and umbrella of the Anam people to advance their collective goals and well-being—especially in Education, Scholarships and Bursary programs.</p>
 </div>
@@ -22,4 +19,4 @@ return (
 }
 
 
-export default Sponsor
+export default Sponsors

@@ -13,7 +13,7 @@ const Navbar = () => {
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2">
           <img
-            src={assets.logo1}
+            src={assets.N_logo1}
             alt="Mboho Anam Logo"
             className="h-12 w-auto"
           />

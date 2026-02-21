@@ -19,6 +19,12 @@ import Sir_Udo2 from './images/Sir_Udo2.jpeg'
 import Sir_Udo3 from './images/Sir_Udo3.jpeg'
 import Gen_Sec from './images/Gen_Sec.png'
 import anam_student from './images/anam_student.jpg'
+import Dr_Ekem from "./images/Dr_Ekem.jpeg"
+import N_logo1 from "./images/N_logo1.jpeg"
+import N_gallery from "./images/N_gallery.jpeg"
+import M_logo from "./images/M_logo.jpeg"
+import A_logo from "./images/A_logo.jpg"
+import m_logo11 from "./images/m_logo11.jpg"
 
 export const assets = {
   Akwa_imge,  
@@ -42,6 +48,13 @@ export const assets = {
   Sir_Udo3,
   Gen_Sec,
   anam_student,
+   Dr_Ekem,
+   N_logo1,
+   N_gallery,
+   M_logo,
+   m_logo11,
+   A_logo
+
 }
 
 

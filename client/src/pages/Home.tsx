@@ -15,7 +15,7 @@ const features = [
 
 const Home = () => {
   return (
-    <main className="pt-16">
+    <main className="">
       <Hero />
       <CardsSection />
 

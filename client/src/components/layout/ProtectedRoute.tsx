@@ -1,9 +1,51 @@
 // import { Navigate } from "react-router-dom";
+// import { useAuth } from "../../context/AuthContext";
+// import type { ReactNode } from "react";
 
-// const ProtectedRoute = ({ children }: { children: JSX.Element }) => {
-//   const isAuthenticated = false; // later replace with auth logic
+// interface Props {
+//   children: ReactNode;
+//   role?: "student" | "admin";
+// }
 
-//   return isAuthenticated ? children : <Navigate to="/login" />;
+// const ProtectedRoute = ({ children, role }: Props) => {
+//   const { user } = useAuth();
+
+//   if (!user) {
+//     return <Navigate to="/login" replace />;
+//   }
+
+//   if (role && user.role !== role) {
+//     return <Navigate to="/" replace />;
+//   }
+
+//   return <>{children}</>;
 // };
 
 // export default ProtectedRoute;
+
+
+
+import { Navigate } from "react-router-dom";
+import { useAuth } from "../../context/AuthContext";
+import type { ReactNode } from "react";
+
+interface Props {
+  children: ReactNode;
+  role?: "student" | "admin";
+}
+
+const ProtectedRoute = ({ children, role }: Props) => {
+  const { user } = useAuth();
+
+  if (!user) {
+    return <Navigate to="/login" replace />;
+  }
+
+  if (role && user.role !== role) {
+    return <Navigate to="/" replace />;
+  }
+
+  return <>{children}</>;
+};
+
+export default ProtectedRoute;
