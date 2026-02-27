@@ -21,7 +21,7 @@ import m_logo11 from "./images/m_logo11.jpg"
 import history3 from "./images/history3.jpg"
 import hero1 from "./images/hero1.jpg"
 import community_1 from "./images/community_1.jpg"
-
+import use_1 from "./images/use_1.png"
 export const assets = {
   Dr_Ikim, 
   gen_member,
@@ -45,8 +45,9 @@ export const assets = {
    A_logo,
    history3,
    hero1,
-   community_1
-
+   community_1,
+   use_1
+ 
 }
 
 

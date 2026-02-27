@@ -13,9 +13,9 @@ const Navbar = () => {
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2">
           <img
-            src={assets.N_logo1}
+            src={assets.use_1}
             alt="Mboho Anam Logo"
-            className="h-12 w-auto"
+            className="h-20 w-auto"
           />
         </Link>
           <span className="font-bold text-[#065f46] text-2xl">
