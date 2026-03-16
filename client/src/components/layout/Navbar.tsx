@@ -15,7 +15,7 @@ const Navbar = () => {
           <img
             src={assets.use_1}
             alt="Mboho Anam Logo"
-            className="h-20 w-auto"
+            className="h-[8rem] w-auto mb-4"
           />
         </Link>
           <span className="font-bold text-[#065f46] text-2xl">
@@ -130,3 +130,6 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
+

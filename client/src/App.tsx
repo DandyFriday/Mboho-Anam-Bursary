@@ -12,29 +12,34 @@
 
 // import ProtectedRoute from "./components/layout/ProtectedRoute";
 // import StudentDashboard from "./pages/student/Dashboard";
-// import Application from "./pages/student/Application";
 // import AdminDashboard from "./pages/admin/Dashboard";
+// import Application from "./pages/student/Application";
+
+// import Community from "./pages/Community";
+// import ClanDetail from "./pages/ClanDetail";
+// import History from "./pages/History";
+// import Heroes from "./pages/Heroes";
 
 // const App = () => {
 //   return (
 //     <div className="min-h-screen flex flex-col">
-//       {/* Navbar stays fixed at top */}
 //       <Navbar />
 
-//       <main className="flex-grow">
+//       {/* Padding because Navbar is fixed */}
+//       <main className="flex-grow pt-16">
 //         <Routes>
-//           {/* -------- Public Routes -------- */}
+//           {/* Public */}
 //           <Route path="/" element={<Home />} />
 //           <Route path="/contact" element={<Contact />} />
 //           <Route path="/news" element={<News />} />
 //           <Route path="/bursary" element={<Bursary />} />
 //           <Route path="/forum" element={<Forum />} />
 
-//           {/* -------- Auth Routes -------- */}
+//           {/* Auth */}
 //           <Route path="/login" element={<Login />} />
 //           <Route path="/register" element={<Register />} />
 
-//           {/* -------- Student Routes -------- */}
+//           {/* Student */}
 //           <Route
 //             path="/student/dashboard"
 //             element={
@@ -43,6 +48,7 @@
 //               </ProtectedRoute>
 //             }
 //           />
+
 //           <Route
 //             path="/student/application"
 //             element={
@@ -52,7 +58,7 @@
 //             }
 //           />
 
-//           {/* -------- Admin Routes -------- */}
+//           {/* Admin */}
 //           <Route
 //             path="/admin/dashboard"
 //             element={
@@ -61,9 +67,6 @@
 //               </ProtectedRoute>
 //             }
 //           />
-
-//           {/* -------- Fallback Route -------- */}
-//           <Route path="*" element={<Home />} />
 //         </Routes>
 //       </main>
 
@@ -73,23 +76,6 @@
 // };
 
 // export default App;
-
-
-
-// // const App = () => {
-// //   return (
-// //     <div style={{ padding: "50px" }}>
-// //       <h1>APP IS RENDERING</h1>
-// //     </div>
-// //   );
-// // };
-
-// // export default App;
-
-
-
-
-
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
@@ -107,26 +93,37 @@ import StudentDashboard from "./pages/student/Dashboard";
 import AdminDashboard from "./pages/admin/Dashboard";
 import Application from "./pages/student/Application";
 
+import Community from "./pages/Community";
+import ClanDetail from "./pages/ClanDetail";
+import History from "./pages/History";
+import Heroes from "./pages/Heroes";
+
 const App = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
 
-      {/* Padding because Navbar is fixed */}
-      <main className="flex-grow pt-16">
+      {/* REMOVE pt-16 FROM HERE */}
+      <main className="flex-grow">
         <Routes>
-          {/* Public */}
+          {/* PUBLIC ROUTES */}
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/news" element={<News />} />
           <Route path="/bursary" element={<Bursary />} />
           <Route path="/forum" element={<Forum />} />
 
-          {/* Auth */}
+          {/* NEW PAGES */}
+          <Route path="/community" element={<Community />} />
+          <Route path="/community/:clanName" element={<ClanDetail />} />
+          <Route path="/history" element={<History />} />
+          <Route path="/heroes" element={<Heroes />} />
+
+          {/* AUTH */}
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
 
-          {/* Student */}
+          {/* STUDENT */}
           <Route
             path="/student/dashboard"
             element={
@@ -135,7 +132,6 @@ const App = () => {
               </ProtectedRoute>
             }
           />
-
           <Route
             path="/student/application"
             element={
@@ -145,7 +141,7 @@ const App = () => {
             }
           />
 
-          {/* Admin */}
+          {/* ADMIN */}
           <Route
             path="/admin/dashboard"
             element={
@@ -154,6 +150,9 @@ const App = () => {
               </ProtectedRoute>
             }
           />
+
+          {/* 404 */}
+          <Route path="*" element={<Home />} />
         </Routes>
       </main>
 

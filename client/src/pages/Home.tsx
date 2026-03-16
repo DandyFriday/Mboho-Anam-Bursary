@@ -1,43 +1,3 @@
-// import Hero from "../components/sections/Hero";
-// import CardsSection from "../components/sections/CardsSection";
-// import Neighbourhood from "../components/sections/Neighbourhood";
-// import Leadership from "../components/sections/LeaderShip";
-// import Sponsors from "../components/sections/Sponsors";
-// import Card from "../components/ui/FeatureCard";
-
-// const features = [
-//   {  caption: "Motivation", description: "Empowering students.", bgClass: "bg-primary", captionClass: "text-white" },
-//   {  caption: "Bursary", description: "Financial support.", bgClass: "bg-orange", captionClass: "text-dark" },
-//   {  caption: "Opportunity", description: "Creating growth.", bgClass: "bg-primary", captionClass: "text-white" },
-//   { caption: "Hope", description: "A brighter future.", bgClass: "bg-orange", captionClass: "text-dark" },
-//   {  caption: "Organization", description: "Unified effort.", bgClass: "bg-[#065f46]", captionClass: "text-white" },
-// ];
-
-// const Home = () => {
-//   return (
-//     <main className="">
-//       <Hero />
-//       <CardsSection />
-
-//       <section className="max-w-7xl mx-auto px-6 py-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
-//         {features.map((f, i) => (
-//           <Card key={i} {...f} />
-//         ))}
-//       </section>
-
-//       <Neighbourhood /> 
-//        <Leadership /> 
-//        <Sponsors />
-//     </main>
-//   );
-// };
-
-// export default Home;
-
-
-
-
-
 import Hero from "../components/sections/Hero";
 import CardsSection from "../components/sections/CardsSection";
 import Neighbourhood from "../components/sections/Neighbourhood";
@@ -55,13 +15,13 @@ const features = [
   },
   {
     title: "Communities",
-    description: "Explore the communities we support.",
+    description: "Explore the communities in Anam.",
     image: assets.community_1,
-    link: "/communities",
+    link: "/community",
   },
   {
     title: "Heroes",
-    description: "Meet the heroes making impact possible.",
+    description: "Meet the past and present heroes making impact possible.",
     image: assets.hero1,
     link: "/heroes",
   },
@@ -74,7 +34,7 @@ const Home = () => {
       <CardsSection />
 
       {/* New Feature Section */}
-      <section className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <section className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-3 gap-6">
         {features.map((feature, index) => (
           // Pass staggered delay for entrance animation
           <FeatureCard key={index} {...feature} delay={index * 0.2} />
